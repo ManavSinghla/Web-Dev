@@ -1,0 +1,21 @@
+:root{
+    --bg: #00ffe5;
+    --hover: #470061;
+
+}
+
+.nav a{
+    display: flex;
+    background-color: var(--bg);
+    margin:10;
+    padding:10;
+    text-decoration: none;
+    color: rgb(120, 70, 6);
+    font-size: xx-large;
+}
+
+a:hover{
+    background-color: #fff;
+    text-transform: uppercase;
+    color: var(--hover);
+}
