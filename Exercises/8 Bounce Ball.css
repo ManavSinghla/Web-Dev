@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  --ball-size-height: 50px; /*Change the  ball size from here */
+}
+
+#box {
+  height: 80vh;
+  width: 90vi;
+  background-color: aqua;
+  position: relative;
+  margin: 30px;
+}
+
+#circle {
+  height: var(--ball-size-height);
+  width: var(--ball-size-height);
+  background-color: darkblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: bounceY 2.5s ease-in infinite alternate-reverse,
+    bounceX 12s linear infinite alternate-reverse;
+}
+
+@keyframes bounceY {
+  from {
+    bottom: calc(100% - var(--ball-size-height));
+    background-color: red;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes bounceX {
+  from {
+    left: calc(100% - var(--ball-size-height));
+  }
+  to {
+    left: 0;
+  }
+}
