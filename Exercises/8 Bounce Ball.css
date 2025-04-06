@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   --ball-size-height: 50px; /*Change the  ball size from here */
+  --ball-color: red; /*Change the ball color from here */
 }
 
 #box {
@@ -27,7 +28,7 @@
 @keyframes bounceY {
   from {
     bottom: calc(100% - var(--ball-size-height));
-    background-color: red;
+    background-color: var(--ball-color);
   }
   to {
     bottom: 0;
