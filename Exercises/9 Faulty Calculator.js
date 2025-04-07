@@ -12,7 +12,7 @@ switch (z) {
     if (a > 10) {
       console.log(x + y);
     } else {
-      console.log(x * y);
+      console.log(x - y);
     }
     break;
   case "-":
@@ -26,7 +26,7 @@ switch (z) {
     if (a > 10) {
       console.log(x * y);
     } else {
-      console.log(x / y);
+      console.log(x + y);
     }
     break;
   case "/":
