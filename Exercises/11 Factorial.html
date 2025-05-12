@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        /*let a=prompt("Enter the number: ");
+        let ans=1;
+        for(let i=2;i<=a;i++){
+            ans*=i;
+            }
+            console.log(ans);*/
+            
+        let a=prompt("Enter the number: ");
+        
+        function Factorial(number){
+            let arr=[];
+            for(let i=0;i<number;i++){
+                arr[i]=i+1
+            }
+            let ans=arr.reduce((a,b)=>{
+                return a*b;
+            })
+            console.log(ans);
+        }
+        Factorial(a);
+    </script>
+</body>
+</html>

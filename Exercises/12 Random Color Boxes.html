@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 30px;
+            margin: 20px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+
+    <script>
+        function randColour(){
+            let a=Math.ceil(Math.random()*255);
+            let b=Math.ceil(Math.random()*255);
+            let c=Math.ceil(Math.random()*255);
+
+            return `rgb(${a},${b},${c})`;
+        }
+        let box=document.querySelectorAll(".box");
+        //box[0].style.background=("red");
+        box.forEach(a=>{
+            a.style.backgroundColor=randColour();
+            a.style.color=randColour();
+        });
+    </script>
+</body>
+</html>

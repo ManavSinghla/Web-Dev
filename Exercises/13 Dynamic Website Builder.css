@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    display: flex;
+    margin: 20px;
+    /* padding: 20px; */
+    gap: 10px;
+}
+
+.cardLeft{
+    display: flex;
+    /* margin: 10px; */
+    /* padding: 20px; */
+    position: relative;
+}
+
+img{
+    border-radius: 8px;
+}
+
+#duration{
+    padding: 4px;
+    background-color: gray;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cardRight{
+    margin-top: 5px;
+}
+
+.rightBelow{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5px;
+    margin-top: 10px;
+    color: gray;
+}
+
+#title{
+    font-weight: bold;
+    font-size: large;
+}
